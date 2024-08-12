@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(imgs/dark-tokyo-street-j198bc39ih4abdr8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box{
+    padding: 20px 30px;
+    width: 400px;
+    height: 460px; /* Increased height to accommodate the larger submit button */
+    backdrop-filter: blur(38px);
+    border-radius: 5px;
+    background: rgba(49, 49, 49, .2);
+    border: 1px solid rgba(255, 255, 255, .5);
+}
+
+.box .form{
+    padding: 10px 20px;
+}
+
+.box .form h2{
+    text-align: center;
+    color: white;
+}
+
+.box .form form{
+    margin-top: 30px; /* Reduced margin-top for better alignment */
+    align-items: center;
+    text-align: center; /* Center the form elements */
+}
+
+.box .form form .inputbox {
+    margin-bottom: 20px;
+    position: relative; /* Make the position relative for correct label positioning */
+}
+
+.box .form form .inputbox input{
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #12151e;
+    margin-bottom: 10px;
+    color: white; /* Make input text color white */
+    text-align: center; /* Center the input text */
+}
+
+.box .form form .inputbox span{
+    margin-bottom: 10px; /* Add this line to give space between the label and input box */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #fff;
+}
+
+.box .form form .inputbox input{
+    padding: 19px 2px; /* Increase padding to create more space inside the input box */
+    /* Other properties remain unchanged */
+}
+
+.box .form form input[type="submit"]{
+    padding: 15px 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #00bcd4;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.box .form form input[type="submit"]:hover{
+    background-color: #0097a7;
+}
